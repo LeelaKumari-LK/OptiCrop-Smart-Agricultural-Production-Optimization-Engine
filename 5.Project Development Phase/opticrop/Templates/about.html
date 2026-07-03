@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OptiCrop - About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url("{{ url_for('static', filename='images/about_bg.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .topnav {
+            background-color: #2e7d32;
+            overflow: hidden;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .topnav a.active {
+            background-color: #1b5e20;
+            color: white;
+        }
+        .content {
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #2e7d32;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a class="active" href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('findyourcrop') }}">FindYourCrop</a>
+    </div>
+    <div class="content">
+        <h2>OptiCrop - Smart Agricultural Optimization Using ML</h2>
+        <p>
+            The project "OptiCrop: Smart Agricultural Production Optimization Engine" aims to develop
+            an advanced software system that utilizes data-driven insights to optimize agricultural
+            production for different crops. By integrating key environmental factors such as Nitrogen (N),
+            Phosphorous (P), Potassium (K) levels, soil temperature, humidity, pH, rainfall, and crop types,
+            OptiCrop seeks to provide intelligent recommendations to farmers for maximizing yields and
+            resource efficiency.
+        </p>
+        <p>
+            The knowledge and insights gained through the OptiCrop project can be utilized by agricultural
+            researchers, policymakers, and stakeholders to advance the understanding of crop-environment
+            interactions and inform the development of evidence-based agricultural strategies. OptiCrop
+            revolutionizes agricultural practices by providing farmers with a smart production optimization
+            engine, enabling optimal yields, improved resource efficiency, and sustainable agricultural practices.
+        </p>
+    </div>
+</body>
+</html>
