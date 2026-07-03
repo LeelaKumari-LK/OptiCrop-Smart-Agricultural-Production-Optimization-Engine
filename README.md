@@ -77,22 +77,22 @@ apple banana chickpea coconut coffee grapes mango mungbean muskmelon orange pome
 
 OptiCrop/
 │
-├── app.py                          # Flask backend — routes & prediction logic
-├── eda.py                          # Data analysis, preprocessing & model training
-├── Crop_recommendation.csv         # Source dataset
-├── model.pkl                       # Serialized trained Logistic Regression model
-├── scaler.pkl                      # Serialized StandardScaler
+├── app.py                      
+├── eda.py                        
+├── Crop_recommendation.csv         
+├── model.pkl                       
+├── scaler.pkl                      
 │
 ├── templates/
-│   ├── home.html                   # Home page
-│   ├── about.html                  # About page
-│   └── findyourcrop.html           # Prediction form & result page
+│   ├── home.html                   
+│   ├── about.html                  
+│   └── findyourcrop.html           
 │
 ├── static/
 │   └── images/
-│       ├── home_bg.jpg             # Home page background
-│       ├── about_bg.jpg            # About page background
-│       └── crop_bg.jpg             # FindYourCrop background
+│       ├── home_bg.jpg           
+│       ├── about_bg.jpg          
+│       └── crop_bg.jpg            
 │
 └── docs/
     ├── Document1_Code_Layout_Readability_Reusability.docx
